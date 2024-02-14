@@ -16,8 +16,8 @@ export const ImageCard = ({ name, description, src }: ImageItem) => {
         <CardTitle>{name}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
-      <CardContent>
-        <div className="w-[10rem] h-[10rem] relative flex">
+      <CardContent className="flex justify-center">
+        <div className="w-[14rem] h-[14rem] relative flex">
           <Image src={src} alt={name} fill />
         </div>
       </CardContent>
