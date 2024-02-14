@@ -35,7 +35,7 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="flex items-center w-full flex-col justify-center ">
+    <div className="flex items-center relative overflow-hidden w-full flex-col justify-center ">
       {items.map((item, index) => (
         <motion.div
           key={index}
