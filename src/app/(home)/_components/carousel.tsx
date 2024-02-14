@@ -35,7 +35,7 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="flex items-center flex-col justify-center ">
+    <div className="flex items-center w-full flex-col justify-center ">
       {items.map((item, index) => (
         <motion.div
           key={index}
@@ -43,7 +43,7 @@ export const Carousel = () => {
           animate={positions[posI[index]]}
           variants={cardVariants}
           transition={{ duration: 0.5 }}
-          style={{ width: "20%", position: "absolute" }}
+          style={{ width: "20%", position: "absolute", minWidth: "15rem" }}
         >
           <ImageCard {...item} />
         </motion.div>
